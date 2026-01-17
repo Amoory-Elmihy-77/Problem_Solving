@@ -30,7 +30,6 @@ ___
 ```javascript
 var groupAnagrams = function (strs) {
   const map = new Map();
-  // ["eat", "tea", "tan", "ate", "nat", "bat"]
   for (let s of strs) {
     const key = s.split("").sort().join("");
     if (!map.has(key)) {
